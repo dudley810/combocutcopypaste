@@ -1,0 +1,22 @@
+﻿<Window x:Class="combocutcopypaste.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:combocutcopypaste"
+        mc:Ignorable="d" xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="200" Width="550">
+    <DockPanel Margin="30,30,30,30">
+        <Label DockPanel.Dock="Bottom">RIGHT CLICK ON COMBO 4.30 SHOWS (CUT,COPY,PASTE) - 4.40 and above does not.</Label>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Height="28" VerticalAlignment="Top">
+            <Label>TEST COMBO:</Label>
+            <ComboBox Margin="5,0,0,0" IsEditable="True" Width="200" Style="{DynamicResource MaterialDesignComboBox}" FontSize="14"  MaxDropDownHeight="200" IsTextSearchEnabled="false" ScrollViewer.VerticalScrollBarVisibility="Auto"  Height="28">
+                <ComboBoxItem IsSelected="True">Select1</ComboBoxItem>
+                <ComboBoxItem>Select2</ComboBoxItem>
+                <ComboBoxItem>Select3</ComboBoxItem>
+                <ComboBoxItem>Select4</ComboBoxItem>
+                <ComboBoxItem>Select5</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+    </DockPanel>
+</Window>
